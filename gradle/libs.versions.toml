@@ -1,0 +1,5 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+[versions]
+# @pin
+kotlin = "1.8.22"

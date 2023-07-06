@@ -35,6 +35,12 @@ dependencyResolutionManagement {
             url = uri("https://jitpack.io")
         }
     }
+
+    versionCatalogs {
+        create("coilLibs") {
+            from(files("./gradle/catalogs/coil.toml"))
+        }
+    }
 }
 
 rootProject.name = "android-snippets"
