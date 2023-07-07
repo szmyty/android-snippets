@@ -1,0 +1,24 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+[versions]
+activity = "1.8.0-alpha06"
+ads = "1.0.0-alpha05"
+annotation = "1.7.0-alpha02"
+appcompat = "1.7.0-alpha02"
+
+[libraries]
+activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+ads = { module = "androidx.ads:ads-identifier", version.ref = "ads" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+appcompat-resources = { module = "androidx.appcompat:appcompat-resources", version.ref = "appcompat" }
+
+
+[bundles]
+androidx = [
+    "activity",
+    "ads",
+    "annotation",
+    "appcompat",
+    "appcompat-resources"
+]
