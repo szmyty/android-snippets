@@ -1,0 +1,16 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview
+# https://developer.android.com/jetpack/androidx/releases/benchmark#microbenchmark
+[versions]
+benchmark = "1.2.0-alpha16"
+
+[libraries]
+benchmark-macro = { module = "androidx.benchmark:benchmark-macro-junit4", version.ref = "benchmark" }
+benchmark-micro = { module = "androidx.benchmark:benchmark-junit4", version.ref = "benchmark" }
+
+[bundles]
+benchmark = [
+    "benchmark-macro",
+    "benchmark-micro",
+]

@@ -9,7 +9,7 @@ buildCache {
 }
 
 pluginManagement {
-    //includeBuild("build-logic")
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
         google()
