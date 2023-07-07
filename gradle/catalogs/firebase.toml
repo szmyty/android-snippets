@@ -1,0 +1,13 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://google.github.io/accompanist/
+[versions]
+accompanist = "0.31.5-beta"
+
+[libraries]
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+
+[bundles]
+accompanist = [
+    "accompanist-systemuicontroller",
+]
