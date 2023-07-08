@@ -1,0 +1,31 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://developer.android.com/jetpack/androidx/releases/camera
+[versions]
+camera-camera2 = "1.3.0-beta01"
+camera-core = "1.3.0-beta01"
+camera-lifecycle = "1.3.0-beta01"
+camera-video = "1.3.0-beta01"
+camera-view = "1.3.0-beta01"
+camera-mlkit-vision = "1.3.0-beta01"
+camera-extensions = "1.3.0-beta01"
+
+[libraries]
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camera-camera2" }
+camera-core = { module = "androidx.camera:camera-core", version.ref = "camera-core" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camera-lifecycle" }
+camera-video = { module = "androidx.camera:camera-video", version.ref = "camera-video" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camera-view" }
+camera-mlkit-vision = { module = "androidx.camera:camera-mlkit-vision", version.ref = "camera-mlkit-vision" }
+camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "camera-extensions" }
+
+[bundles]
+camera = [
+    "camera-camera2",
+    "camera-core",
+    "camera-lifecycle",
+    "camera-video",
+    "camera-view",
+    "camera-mlkit-vision",
+    "camera-extensions",
+]

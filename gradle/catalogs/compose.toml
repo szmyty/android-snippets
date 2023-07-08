@@ -1,0 +1,12 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+[versions]
+constraintlayout-compose = "1.1.0-alpha10"
+
+[libraries]
+constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
+
+[bundles]
+compose = [
+    "constraintlayout-compose"
+]
