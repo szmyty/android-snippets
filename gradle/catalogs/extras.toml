@@ -1,0 +1,16 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# Third-party Libraries.
+[versions]
+easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
+retrofit = "2.9.0" # https://github.com/square/retrofit
+
+[libraries]
+easydeviceinfo = { module = "com.github.nisrulz:easydeviceinfo", version.ref = "easydeviceinfo" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
+[bundles]
+extras = [
+    "easydeviceinfo",
+    "retrofit",
+]
