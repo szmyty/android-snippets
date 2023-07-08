@@ -17,6 +17,13 @@ concurrent = "1.2.0-alpha01"
 constraintlayout = "2.2.0-alpha10"
 contentpager = "1.0.0"
 coordinatorlayout = "1.2.0"
+core = "1.12.0-alpha05"
+core-animation = "1.0.0-beta01"
+core-google-shortcuts = "1.1.0"
+core-performance = "1.0.0-alpha02"
+core-remoteviews = "1.0.0-beta04"
+core-role = "1.1.0-rc01"
+core-splashscreen = "1.1.0-alpha01"
 core-uwb = "1.0.0-alpha05"
 credentials = "1.2.0-alpha05"
 cursoradapter = "1.0.0"
@@ -51,6 +58,15 @@ concurrent-ktx = { module = "androidx.concurrent:concurrent-futures-ktx", versio
 constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 contentpager = { module = "androidx.contentpager:contentpager", version.ref = "contentpager" }
 coordinatorlayout = { module = "androidx.coordinatorlayout:coordinatorlayout", version.ref = "coordinatorlayout" }
+core = { module = "androidx.core:core", version.ref = "core" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core" }
+core-role = { module = "androidx.core:core-role", version.ref = "core-role" }
+core-animation = { module = "androidx.core:core-animation", version.ref = "core-animation" }
+core-animation-testing = { module = "androidx.core:core-animation-testing", version.ref = "core-animation" }
+core-performance = { module = "androidx.core:core-performance", version.ref = "core-performance" }
+core-google-shortcuts = { module = "androidx.core:core-google-shortcuts", version.ref = "core-google-shortcuts" }
+core-remoteviews = { module = "androidx.core:core-remoteviews", version.ref = "core-remoteviews" }
+core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
 core-uwb = { module = "androidx.core.uwb:uwb", version.ref = "core-uwb" }
 credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
 credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials" }
@@ -89,6 +105,14 @@ androidx = [
     "constraintlayout",
     "contentpager",
     "coordinatorlayout",
+    "core",
+    "core-ktx",
+    "core-role",
+    "core-animation",
+    "core-performance",
+    "core-google-shortcuts",
+    "core-remoteviews",
+    "core-splashscreen",
     "core-uwb",
     "credentials",
     "credentials-play-services-auth",
@@ -96,5 +120,7 @@ androidx = [
     "customview",
     "customview-poolingcontainer",
     "exifinterface",
-    "constraintlayout",
+]
+androidTesting = [
+    "core-animation-testing"
 ]
