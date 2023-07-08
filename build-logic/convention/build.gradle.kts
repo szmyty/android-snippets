@@ -20,11 +20,11 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 dependencies {
-    compileOnly(libs.android.gradlePlugin)
-    compileOnly(libs.firebase.crashlytics.gradlePlugin)
-    compileOnly(libs.firebase.performance.gradlePlugin)
-    compileOnly(libs.kotlin.gradlePlugin)
-    compileOnly(libs.ksp.gradlePlugin)
+    compileOnly(libs.android.gradle.plugin)
+    compileOnly(libs.firebase.crashlytics.gradle.plugin)
+    compileOnly(libs.firebase.performance.gradle.plugin)
+    compileOnly(libs.kotlin.gradle.plugin)
+    compileOnly(libs.ksp.gradle.plugin)
 }
 
 gradlePlugin {

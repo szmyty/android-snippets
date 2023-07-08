@@ -4,27 +4,39 @@
 android-gradle-plugin = "8.0.2"
 # @pin
 kotlin = "1.8.22"
+firebase-bom = "32.1.1"
+firebase-crashlytics-plugin = "2.9.6"
+firebase-perf-plugin = "1.4.2"
+gms-plugin = "4.3.14"
+google-oss = "17.0.1"
+google-oss-plugin = "0.10.6"
+hilt = "2.46.1"
+ksp = "1.8.22-1.0.11"
+protobuf = "3.23.0"
+protobuf-plugin = "0.9.3"
+secrets-plugin = "2.0.1"
 
+[libraries]
+#### Gradle Plugins. ####
+google-oss-licenses-plugin = { group = "com.google.android.gms", name = "oss-licenses-plugin", version.ref = "google-oss-plugin" }
 
-
-# Dependencies of the included build-logic
+#### Dependencies of the included build-logic. ####
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "android-gradle-plugin" }
-firebase-crashlytics-gradle-plugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
-firebase-performance-gradle-plugin = { group = "com.google.firebase", name = "perf-plugin", version.ref = "firebasePerfPlugin" }
+firebase-crashlytics-gradle-plugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebase-crashlytics-plugin" }
+firebase-performance-gradle-plugin = { group = "com.google.firebase", name = "perf-plugin", version.ref = "firebase-perf-plugin" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
-
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
 android-test = { id = "com.android.test", version.ref = "android-gradle-plugin" }
-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsPlugin" }
-firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebasePerfPlugin" }
-gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebase-crashlytics-plugin" }
+firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebase-perf-plugin" }
+gms = { id = "com.google.gms.google-services", version.ref = "gms-plugin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets-plugin" }
