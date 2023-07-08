@@ -4,13 +4,52 @@
 [versions]
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
 retrofit = "2.9.0" # https://github.com/square/retrofit
+retrofit2-kotlinx-serialization-converter = "1.0.0"
 
 [libraries]
 easydeviceinfo = { module = "com.github.nisrulz:easydeviceinfo", version.ref = "easydeviceinfo" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-adapter-guava = { module = "com.squareup.retrofit2:adapter-guava", version.ref = "retrofit" }
+retrofit-adapter-java8 = { module = "com.squareup.retrofit2:adapter-java8", version.ref = "retrofit" }
+retrofit-adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit" }
+retrofit-adapter-rxjava3 = { module = "com.squareup.retrofit2:adapter-rxjava3", version.ref = "retrofit" }
+retrofit-adapter-scala = { module = "com.squareup.retrofit2:adapter-scala", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+retrofit-converter-guava = { module = "com.squareup.retrofit2:converter-guava", version.ref = "retrofit" }
+retrofit-converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", version.ref = "retrofit" }
+retrofit-converter-java8 = { module = "com.squareup.retrofit2:converter-java8", version.ref = "retrofit" }
+retrofit-converter-jaxb = { module = "com.squareup.retrofit2:converter-jaxb", version.ref = "retrofit" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+retrofit-converter-protobuf = { module = "com.squareup.retrofit2:converter-protobuf", version.ref = "retrofit" }
+retrofit-converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "retrofit" }
+retrofit-converter-simplexml = { module = "com.squareup.retrofit2:converter-simplexml", version.ref = "retrofit" }
+retrofit-converter-wire = { module = "com.squareup.retrofit2:converter-wire", version.ref = "retrofit" }
+retrofit-mock = { module = "com.squareup.retrofit2:retrofit-mock", version.ref = "retrofit" }
+retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2-kotlinx-serialization-converter" }
 
 [bundles]
-extras = [
+utils = [
     "easydeviceinfo",
+]
+retrofit = [
     "retrofit",
+    "retrofit-adapter-guava",
+    "retrofit-adapter-java8",
+    "retrofit-adapter-rxjava2",
+    "retrofit-adapter-rxjava3",
+    "retrofit-adapter-scala",
+    "retrofit-converter-gson",
+    "retrofit-converter-guava",
+    "retrofit-converter-jackson",
+    "retrofit-converter-java8",
+    "retrofit-converter-jaxb",
+    "retrofit-converter-moshi",
+    "retrofit-converter-protobuf",
+    "retrofit-converter-scalars",
+    "retrofit-converter-simplexml",
+    "retrofit-converter-wire",
+    "retrofit2-kotlinx-serialization-converter",
+]
+testing = [
+    "retrofit-mock"
 ]
