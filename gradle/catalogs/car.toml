@@ -1,0 +1,21 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://developer.android.com/jetpack/androidx/releases/car-app
+[versions]
+car-app = "1.4.0-alpha01"
+
+[libraries]
+car-app = { module = "androidx.car.app:app", version.ref = "car-app" }
+car-app-projected = { module = "androidx.car.app:app-projected", version.ref = "car-app" }
+car-app-automotive = { module = "androidx.car.app:app-automotive", version.ref = "car-app" }
+car-app-testing = { module = "androidx.car.app:app-testing", version.ref = "car-app" }
+
+[bundles]
+car = [
+    "car-app",
+    "car-app-projected",
+    "car-app-automotive",
+]
+testImplementation = [
+    "car-app-testing"
+]
