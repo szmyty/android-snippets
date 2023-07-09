@@ -1,12 +1,35 @@
 #### Gradle Library Catalog ####
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
-leanback = "1.2.0-alpha02"
+privacysandbox-ads = "1.0.0-beta05"
+privacysandbox-plugins = "1.0.0-alpha01"
+privacysandbox-sdkruntime = "1.0.0-alpha06"
+privacysandbox-tools = "1.0.0-alpha04"
 
 [libraries]
-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
+privacysandbox-ads-adservices = { module = "androidx.privacysandbox.ads:ads-adservices", version.ref = "privacysandbox-ads" }
+privacysandbox-ads-adservices-java = { module = "androidx.privacysandbox.ads:ads-adservices-java", version.ref = "privacysandbox-ads" }
+privacysandbox-plugins = { module = "androidx.privacysandbox.plugins:plugins-privacysandbox-library", version.ref = "privacysandbox-plugins" }
+privacysandbox-sdkruntime-core = { module = "androidx.privacysandbox.sdkruntime:sdkruntime-core", version.ref = "privacysandbox-sdkruntime" }
+privacysandbox-sdkruntime-client = { module = "androidx.privacysandbox.sdkruntime:sdkruntime-client", version.ref = "privacysandbox-sdkruntime" }
+privacysandbox-tools = { module = "androidx.privacysandbox.tools:tools", version.ref = "privacysandbox-tools" }
+privacysandbox-tools-apicompiler = { module = "androidx.privacysandbox.tools:tools-apicompiler", version.ref = "privacysandbox-tools" }
+privacysandbox-tools-apigenerator = { module = "androidx.privacysandbox.tools:tools-apigenerator", version.ref = "privacysandbox-tools" }
+privacysandbox-tools-core = { module = "androidx.privacysandbox.tools:tools-core", version.ref = "privacysandbox-tools" }
+privacysandbox-tools-testing = { module = "androidx.privacysandbox.tools:tools-testing", version.ref = "privacysandbox-tools" }
+privacysandbox-tools-apipackager = { module = "androidx.privacysandbox.tools:tools-apipackager", version.ref = "privacysandbox-tools" }
 
 [bundles]
-compose = [
-    "constraintlayout-compose"
+privacysandbox = [
+    "privacysandbox-ads-adservices",
+    "privacysandbox-ads-adservices-java",
+    "privacysandbox-plugins",
+    "privacysandbox-sdkruntime-core",
+    "privacysandbox-sdkruntime-client",
+    "privacysandbox-tools",
+    "privacysandbox-tools-apicompiler",
+    "privacysandbox-tools-apigenerator",
+    "privacysandbox-tools-core",
+    "privacysandbox-tools-testing",
+    "privacysandbox-tools-apipackager",
 ]
