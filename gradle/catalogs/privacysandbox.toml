@@ -2,12 +2,11 @@
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
 leanback = "1.2.0-alpha02"
-recommendation = "1.0.0"
 
 [libraries]
-recommendation = { module = "androidx.recommendation:recommendation", version.ref = "recommendation" }
+constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
 
 [bundles]
 compose = [
-    "recommendation"
+    "constraintlayout-compose"
 ]

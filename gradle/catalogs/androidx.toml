@@ -50,6 +50,20 @@ heifwriter = "1.1.0-alpha01"
 input = "1.0.0-beta01"
 interpolator = "1.0.0"
 javascriptengine = "1.0.0-alpha05"
+loader = "1.1.0"
+multidex = "2.0.1"
+metrics = "1.0.0-alpha04"
+palette = "1.0.0"
+percentlayout = "1.0.0"
+preference = "1.2.0"
+print = "1.1.0-beta01"
+profileinstaller = "1.3.1"
+recyclerview = "1.3.1-rc01"
+recyclerview-selection = "1.2.0-alpha01"
+resourceinspection = "1.0.1"
+savedstate = "1.2.1"
+sharetarget = "1.2.0"
+slidingpanelayout = "1.2.0"
 
 [libraries]
 activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
@@ -120,6 +134,23 @@ heifwriter = { module = "androidx.heifwriter:heifwriter", version.ref = "heifwri
 input = { module = "androidx.input:input-motionprediction", version.ref = "input" }
 interpolator = { module = "androidx.interpolator:interpolator", version.ref = "interpolator" }
 javascriptengine = { module = "androidx.javascriptengine:javascriptengine", version.ref = "javascriptengine" }
+loader = { module = "androidx.loader:loader", version.ref = "loader" }
+multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+metrics = { module = "androidx.metrics:metrics-performance", version.ref = "metrics" }
+palette = { module = "androidx.palette:palette", version.ref = "palette" }
+percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentlayout" }
+preference = { module = "androidx.preference:preference", version.ref = "preference" }
+preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference" }
+print = { module = "androidx.print:print", version.ref = "print" }
+profileinstaller = { module = "androidx.profileinstaller:profileinstaller", version.ref = "profileinstaller" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+recyclerview-selection = { module = "androidx.recyclerview:recyclerview-selection", version.ref = "recyclerview-selection" }
+resourceinspection-annotation = { module = "androidx.resourceinspection:resourceinspection-annotation", version.ref = "resourceinspection" }
+resourceinspection-processor = { module = "androidx.resourceinspection:resourceinspection-processor", version.ref = "resourceinspection" }
+savedstate = { module = "androidx.savedstate:savedstate", version.ref = "savedstate" }
+savedstate-ktx = { module = "androidx.savedstate:savedstate-ktx", version.ref = "savedstate" }
+sharetarget = { module = "androidx.sharetarget:sharetarget", version.ref = "sharetarget" }
+slidingpanelayout = { module = "androidx.slidingpanelayout:slidingpanelayout", version.ref = "slidingpanelayout" }
 
 [bundles]
 androidx = [
@@ -189,6 +220,23 @@ androidx = [
     "input",
     "interpolator",
     "javascriptengine",
+    "loader",
+    "multidex",
+    "metrics",
+    "palette",
+    "percentlayout",
+    "preference",
+    "preference-ktx",
+    "print",
+    "profileinstaller",
+    "recyclerview",
+    "recyclerview-selection",
+    "resourceinspection-annotation",
+    "resourceinspection-processor",
+    "savedstate",
+    "savedstate-ktx",
+    "sharetarget",
+    "slidingpanelayout",
 ]
 androidTesting = [
     "core-animation-testing"
