@@ -5,6 +5,7 @@ privacysandbox-ads = "1.0.0-beta05"
 privacysandbox-plugins = "1.0.0-alpha01"
 privacysandbox-sdkruntime = "1.0.0-alpha06"
 privacysandbox-tools = "1.0.0-alpha04"
+privacysandbox-ui = "1.0.0-alpha04"
 
 [libraries]
 privacysandbox-ads-adservices = { module = "androidx.privacysandbox.ads:ads-adservices", version.ref = "privacysandbox-ads" }
@@ -18,6 +19,9 @@ privacysandbox-tools-apigenerator = { module = "androidx.privacysandbox.tools:to
 privacysandbox-tools-core = { module = "androidx.privacysandbox.tools:tools-core", version.ref = "privacysandbox-tools" }
 privacysandbox-tools-testing = { module = "androidx.privacysandbox.tools:tools-testing", version.ref = "privacysandbox-tools" }
 privacysandbox-tools-apipackager = { module = "androidx.privacysandbox.tools:tools-apipackager", version.ref = "privacysandbox-tools" }
+privacysandbox-ui = { module = "androidx.privacysandbox.ui:ui", version.ref = "privacysandbox-ui" }
+privacysandbox-ui-core = { module = "androidx.privacysandbox.ui:ui-core", version.ref = "privacysandbox-ui" }
+privacysandbox-ui-provider = { module = "androidx.privacysandbox.ui:ui-provider", version.ref = "privacysandbox-ui" }
 
 [bundles]
 privacysandbox = [
