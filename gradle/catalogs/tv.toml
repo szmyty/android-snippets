@@ -6,6 +6,8 @@ leanback-grid = "1.0.0-alpha01"
 leanback-paging = "1.1.0-alpha09"
 leanback-tab = "1.1.0-beta01"
 recommendation = "1.0.0"
+tv = "1.0.0-alpha07"
+tvprovider = "1.1.0-alpha01"
 
 [libraries]
 leanback = { module = "androidx.leanback:leanback", version.ref = "leanback" }
@@ -14,6 +16,9 @@ leanback-preference = { module = "androidx.leanback:leanback-preference", versio
 leanback-paging = { module = "androidx.leanback:leanback-paging", version.ref = "leanback-paging" }
 leanback-tab = { module = "androidx.leanback:leanback-tab", version.ref = "leanback-tab" }
 recommendation = { module = "androidx.recommendation:recommendation", version.ref = "recommendation" }
+tv-foundation = { module = "androidx.tv:tv-foundation", version.ref = "tv" }
+tv-material = { module = "androidx.tv:tv-material", version.ref = "tv" }
+tvprovider = { module = "androidx.tvprovider:tvprovider", version.ref = "tvprovider" }
 
 [bundles]
 tv = [
@@ -23,4 +28,7 @@ tv = [
     "leanback-paging",
     "leanback-tab",
     "recommendation",
+    "tv-foundation",
+    "tv-material",
+    "tvprovider",
 ]

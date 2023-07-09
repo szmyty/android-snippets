@@ -18,7 +18,7 @@ games-text-input = { module = "androidx.games:games-text-input", version.ref = "
 games-performance-tuner = { module = "androidx.games:games-performance-tuner", version.ref = "games-performance-tuner" }
 
 [bundles]
-car = [
+games = [
     "games-activity",
     "games-controller",
     "games-frame-pacing",
