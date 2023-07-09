@@ -78,6 +78,7 @@ viewpager2 = "1.1.0-beta02"
 webkit = "1.8.0-alpha01"
 window = "1.2.0-alpha03"
 window-extensions-core = "1.0.0"
+work = "2.9.0-alpha01"
 
 [libraries]
 activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
@@ -185,6 +186,12 @@ window-rxjava2 = { module = "androidx.window:window-rxjava2", version.ref = "win
 window-rxjava3 = { module = "androidx.window:window-rxjava3", version.ref = "window" }
 window-testing = { module = "androidx.window:window-testing", version.ref = "window" }
 window-extensions-core= { module = "androidx.window.extensions.core:core", version.ref = "window-extensions-core" }
+work = { module = "androidx.work:work-runtime", version.ref = "work" }
+work-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+work-rxjava2 = { module = "androidx.work:work-rxjava2", version.ref = "work" }
+work-gcm = { module = "androidx.work:work-gcm", version.ref = "work" }
+work-testing = { module = "androidx.work:work-testing", version.ref = "work" }
+work-multiprocess = { module = "androidx.work:work-multiprocess", version.ref = "work" }
 
 [bundles]
 androidx = [
@@ -292,13 +299,21 @@ androidx = [
     "window-testing",
     "window-extensions-core",
 ]
+work = [
+    "work",
+    "work-ktx",
+    "work-rxjava2",
+    "work-gcm",
+    "work-multiprocess",
+]
 androidTesting = [
-    "core-animation-testing"
+    "core-animation-testing",
 ]
 androidTestImplementation = [
-    "security-app-authenticator"
+    "security-app-authenticator",
+    "work-testing",
 ]
 debugImplementation = [
-    "fragment-testing"
+    "fragment-testing",
 ]
 

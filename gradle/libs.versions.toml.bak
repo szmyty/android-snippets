@@ -1,8 +1,6 @@
 #### Gradle Library Catalog ####
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
-# @pin
-android-desugar-libs = "2.0.3"
 android-gradle-plugin = "8.0.2"
 # @pin
 kotlin = "1.8.22"
