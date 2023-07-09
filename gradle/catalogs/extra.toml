@@ -7,6 +7,7 @@ coil = "2.4.0"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
 retrofit = "2.9.0" # https://github.com/square/retrofit
 retrofit2-kotlinx-serialization-converter = "1.0.0"
+sqlcipher = "4.5.4"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -44,6 +45,7 @@ retrofit-converter-simplexml = { module = "com.squareup.retrofit2:converter-simp
 retrofit-converter-wire = { module = "com.squareup.retrofit2:converter-wire", version.ref = "retrofit" }
 retrofit-mock = { module = "com.squareup.retrofit2:retrofit-mock", version.ref = "retrofit" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2-kotlinx-serialization-converter" }
+sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "sqlcipher" }
 
 [bundles]
 accompanist = [
@@ -65,6 +67,9 @@ coil = [
     "coil-gif",
     "coil-svg",
     "coil-video"
+]
+database = [
+    "sqlcipher",
 ]
 retrofit = [
     "retrofit",

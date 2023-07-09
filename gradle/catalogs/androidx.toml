@@ -64,6 +64,7 @@ loader = "1.1.0"
 multidex = "2.0.1"
 metrics = "1.0.0-alpha04"
 navigation = "2.7.0-beta02"
+room = "2.6.0-alpha02"
 palette = "1.0.0"
 percentlayout = "1.0.0"
 preference = "1.2.0"
@@ -78,6 +79,7 @@ security-app-authenticator = "1.0.0-alpha02"
 security-identity-credential = "1.0.0-alpha03"
 sharetarget = "1.2.0"
 slidingpanelayout = "1.2.0"
+sqlite = "2.4.0-alpha02"
 startup = "1.2.0-alpha02"
 swiperefreshlayout = "1.2.0-alpha01"
 textclassifier = "1.0.0-alpha04"
@@ -202,6 +204,14 @@ recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "r
 recyclerview-selection = { module = "androidx.recyclerview:recyclerview-selection", version.ref = "recyclerview-selection" }
 resourceinspection-annotation = { module = "androidx.resourceinspection:resourceinspection-annotation", version.ref = "resourceinspection" }
 resourceinspection-processor = { module = "androidx.resourceinspection:resourceinspection-processor", version.ref = "resourceinspection" }
+room = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-rxjava2 = { module = "androidx.room:room-rxjava2", version.ref = "room" }
+room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "room" }
+room-guava = { module = "androidx.room:room-guava", version.ref = "room" }
+room-paging = { module = "androidx.room:room-paging", version.ref = "room" }
+room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
 savedstate = { module = "androidx.savedstate:savedstate", version.ref = "savedstate" }
 savedstate-ktx = { module = "androidx.savedstate:savedstate-ktx", version.ref = "savedstate" }
 security-crypto = { module = "androidx.security:security-crypto", version.ref = "security-crypto" }
@@ -209,6 +219,9 @@ security-identity-credential = { module = "androidx.security:security-identity-c
 security-app-authenticator = { module = "androidx.security:security-app-authenticator", version.ref = "security-app-authenticator" }
 sharetarget = { module = "androidx.sharetarget:sharetarget", version.ref = "sharetarget" }
 slidingpanelayout = { module = "androidx.slidingpanelayout:slidingpanelayout", version.ref = "slidingpanelayout" }
+sqlite = { module = "androidx.sqlite:sqlite", version.ref = "sqlite" }
+sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version.ref = "sqlite" }
+sqlite-framework = { module = "androidx.sqlite:sqlite-framework", version.ref = "sqlite" }
 startup = { module = "androidx.startup:startup-runtime", version.ref = "startup" }
 swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
 textclassifier = { module = "androidx.textclassifier:textclassifier", version.ref = "textclassifier" }
@@ -372,10 +385,23 @@ navigation = [
     "navigation-ui-ktx",
     "navigation-dynamic-features-fragment",
 ]
+room = [
+    "room",
+    "room-ktx",
+    "room-rxjava2",
+    "room-rxjava3",
+    "room-guava",
+    "room-paging",
+]
 security = [
     "security-crypto",
     "security-identity-credential",
     "security-app-authenticator",
+]
+sqlite = [
+    "sqlite",
+    "sqlite-ktx",
+    "sqlite-framework",
 ]
 work = [
     "work",
@@ -397,6 +423,9 @@ vectordrawable = [
     "vectordrawable-animated",
     "vectordrawable-seekable",
 ]
+annotationProcessor = [
+    "room-compiler",
+]
 androidTesting = [
     "core-animation-testing",
 ]
@@ -408,11 +437,16 @@ androidTestImplementation = [
 testImplementation = [
     "arch-core-testing",
     "lifecycle-runtime-testing",
+    "room-testing",
 ]
 debugImplementation = [
     "fragment-testing",
 ]
 kapt = [
+    "room-compiler",
     "lifecycle-compiler",
+]
+ksp = [
+    "room-compiler",
 ]
 
