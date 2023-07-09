@@ -6,8 +6,20 @@ work = "2.9.0-alpha01"
 
 [libraries]
 work = { module = "androidx.work:work-runtime", version.ref = "work" }
+work-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+work-rxjava2 = { module = "androidx.work:work-rxjava2", version.ref = "work" }
+work-gcm = { module = "androidx.work:work-gcm", version.ref = "work" }
+work-testing = { module = "androidx.work:work-testing", version.ref = "work" }
+work-multiprocess = { module = "androidx.work:work-multiprocess", version.ref = "work" }
 
 [bundles]
-accompanist = [
+work = [
     "work",
+    "work-ktx",
+    "work-rxjava2",
+    "work-gcm",
+    "work-multiprocess",
+]
+androidTestImplementation = [
+    "work-testing",
 ]
