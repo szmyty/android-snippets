@@ -1,0 +1,13 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://developer.android.com/jetpack/androidx/releases/work
+[versions]
+work = "2.9.0-alpha01"
+
+[libraries]
+work = { module = "androidx.work:work-runtime", version.ref = "work" }
+
+[bundles]
+accompanist = [
+    "work",
+]
