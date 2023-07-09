@@ -2,12 +2,25 @@
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
 leanback = "1.2.0-alpha02"
+leanback-grid = "1.0.0-alpha01"
+leanback-paging = "1.1.0-alpha09"
+leanback-tab = "1.1.0-beta01"
 recommendation = "1.0.0"
 
 [libraries]
+leanback = { module = "androidx.leanback:leanback", version.ref = "leanback" }
+leanback-grid = { module = "androidx.leanback:leanback-grid", version.ref = "leanback-grid" }
+leanback-preference = { module = "androidx.leanback:leanback-preference", version.ref = "leanback" }
+leanback-paging = { module = "androidx.leanback:leanback-paging", version.ref = "leanback-paging" }
+leanback-tab = { module = "androidx.leanback:leanback-tab", version.ref = "leanback-tab" }
 recommendation = { module = "androidx.recommendation:recommendation", version.ref = "recommendation" }
 
 [bundles]
-compose = [
-    "recommendation"
+tv = [
+    "leanback",
+    "leanback-grid",
+    "leanback-preference",
+    "leanback-paging",
+    "leanback-tab",
+    "recommendation",
 ]
