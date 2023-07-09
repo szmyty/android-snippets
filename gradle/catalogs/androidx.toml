@@ -64,6 +64,13 @@ resourceinspection = "1.0.1"
 savedstate = "1.2.1"
 sharetarget = "1.2.0"
 slidingpanelayout = "1.2.0"
+startup = "1.2.0-alpha02"
+swiperefreshlayout = "1.2.0-alpha01"
+textclassifier = "1.0.0-alpha04"
+transition = "1.5.0-alpha01"
+vectordrawable = "1.2.0-beta01"
+vectordrawable-seekable = "1.0.0-beta01"
+versionedparcelable = "1.1.1"
 
 [libraries]
 activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
@@ -151,6 +158,15 @@ savedstate = { module = "androidx.savedstate:savedstate", version.ref = "savedst
 savedstate-ktx = { module = "androidx.savedstate:savedstate-ktx", version.ref = "savedstate" }
 sharetarget = { module = "androidx.sharetarget:sharetarget", version.ref = "sharetarget" }
 slidingpanelayout = { module = "androidx.slidingpanelayout:slidingpanelayout", version.ref = "slidingpanelayout" }
+startup = { module = "androidx.startup:startup-runtime", version.ref = "startup" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+textclassifier = { module = "androidx.textclassifier:textclassifier", version.ref = "textclassifier" }
+transition = { module = "androidx.transition:transition", version.ref = "transition" }
+transition-ktx = { module = "androidx.transition:transition-ktx", version.ref = "transition" }
+vectordrawable = { module = "androidx.vectordrawable:vectordrawable", version.ref = "vectordrawable" }
+vectordrawable-animated = { module = "androidx.vectordrawable:vectordrawable-animated", version.ref = "vectordrawable" }
+vectordrawable-seekable = { module = "androidx.vectordrawable:vectordrawable-seekable", version.ref = "vectordrawable-seekable" }
+versionedparcelable = { module = "androidx.versionedparcelable:versionedparcelable", version.ref = "versionedparcelable" }
 
 [bundles]
 androidx = [
@@ -237,6 +253,15 @@ androidx = [
     "savedstate-ktx",
     "sharetarget",
     "slidingpanelayout",
+    "startup",
+    "swiperefreshlayout",
+    "textclassifier",
+    "transition",
+    "transition-ktx",
+    "vectordrawable",
+    "vectordrawable-animated",
+    "vectordrawable-seekable",
+    "versionedparcelable",
 ]
 androidTesting = [
     "core-animation-testing"
