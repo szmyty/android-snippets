@@ -2,26 +2,70 @@
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
 wear = "1.3.0-rc01"
+wear-compose = "1.3.0-alpha01"
 wear-input = "1.2.0-alpha02"
 wear-input-testing = "1.2.0-alpha02"
 wear-ongoing = "1.0.0"
 wear-phone-interactions = "1.1.0-alpha03"
+wear-protolayout = "1.0.0-beta01"
 wear-remote-interactions = "1.1.0-alpha01"
+wear-tiles = "1.2.0-beta01"
+wear-watchface = "1.2.0-alpha09"
 
 [libraries]
 wear = { module = "androidx.wear:wear", version.ref = "wear" }
+wear-compose = { module = "androidx.wear.compose:compose-foundation", version.ref = "wear-compose" }
+wear-compose-material = { module = "androidx.wear.compose:compose-material", version.ref = "wear-compose" }
+wear-compose-navigation = { module = "androidx.wear.compose:compose-navigation", version.ref = "wear-compose" }
 wear-input = { module = "androidx.wear:wear-input", version.ref = "wear-input" }
 wear-input-testing = { module = "androidx.wear:wear-input-testing", version.ref = "wear-input-testing" }
 wear-ongoing = { module = "androidx.wear:wear-ongoing", version.ref = "wear-ongoing" }
 wear-phone-interactions = { module = "androidx.wear:wear-phone-interactions", version.ref = "wear-phone-interactions" }
+wear-protolayout = { module = "androidx.wear.protolayout:protolayout", version.ref = "wear-protolayout" }
+wear-protolayout-expression = { module = "androidx.wear.protolayout:protolayout-expression", version.ref = "wear-protolayout" }
+wear-protolayout-material = { module = "androidx.wear.protolayout:protolayout-material", version.ref = "wear-protolayout" }
 wear-remote-interactions = { module = "androidx.wear:wear-remote-interactions", version.ref = "wear-remote-interactions" }
+wear-tiles = { module = "androidx.wear.tiles:tiles", version.ref = "wear-tiles" }
+wear-tiles-material = { module = "androidx.wear.tiles:tiles-material", version.ref = "wear-tiles" }
+wear-tiles-renderer = { module = "androidx.wear.tiles:tiles-renderer", version.ref = "wear-tiles" }
+wear-tiles-testing = { module = "androidx.wear.tiles:tiles-testing", version.ref = "wear-tiles" }
+wear-watchface = { module = "androidx.wear.watchface:watchface", version.ref = "wear-watchface" }
+wear-watchface-complications-data-source = { module = "androidx.wear.watchface:watchface-complications-data-source", version.ref = "wear-watchface" }
+wear-watchface-complications-data-source-ktx = { module = "androidx.wear.watchface:watchface-complications-data-source-ktx", version.ref = "wear-watchface" }
+wear-watchface-editor = { module = "androidx.wear.watchface:watchface-editor", version.ref = "wear-watchface" }
+wear-watchface-complications-rendering = { module = "androidx.wear.watchface:watchface-complications-rendering", version.ref = "wear-watchface" }
 
 [bundles]
 wear = [
     "wear",
     "wear-input",
+    "wear-compose",
+    "wear-compose-material",
+    "wear-compose-navigation",
     "wear-input-testing",
     "wear-ongoing",
     "wear-phone-interactions",
+    "wear-protolayout",
+    "wear-protolayout-expression",
+    "wear-protolayout-material",
     "wear-remote-interactions",
+    "wear-tiles",
+    "wear-tiles-material",
+    "wear-watchface",
+    "wear-watchface-complications-data-source",
+    "wear-watchface-complications-data-source-ktx",
+    "wear-watchface-editor",
+    "wear-watchface-complications-rendering",
 ]
+debugImplementation = [
+    "wear-tiles-renderer",
+]
+testImplementation = [
+    "wear-tiles-testing",
+]
+
+# NOTE: DO NOT INCLUDE a dependency on androidx.compose.material:material.
+# androidx.wear.compose:compose-material is designed as a replacement
+# not an addition to androidx.compose.material:material.
+# If there are features from that you feel are missing from
+# androidx.wear.compose:compose-material please raise a bug to let us know.
