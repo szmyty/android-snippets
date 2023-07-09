@@ -37,8 +37,8 @@ dependencyResolutionManagement {
     }
 
     versionCatalogs {
-        create("coilLibs") {
-            from(files("./gradle/catalogs/coil.toml"))
+        create("extraLibs") {
+            from(files("./gradle/catalogs/extra.toml"))
         }
     }
 }

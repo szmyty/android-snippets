@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 dependencyResolutionManagement {
     repositories {
         google()
@@ -7,11 +9,8 @@ dependencyResolutionManagement {
         create("libs") {
             from(files("../gradle/libs.versions.toml"))
         }
-        create("accompanistLibs") {
-            from(files("../gradle/catalogs/accompanist.toml"))
-        }
-        create("coilLibs") {
-            from(files("../gradle/catalogs/coil.toml"))
+        create("extraLibs") {
+            from(files("../gradle/catalogs/extra.toml"))
         }
     }
 }

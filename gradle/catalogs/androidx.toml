@@ -50,9 +50,12 @@ heifwriter = "1.1.0-alpha01"
 input = "1.0.0-beta01"
 interpolator = "1.0.0"
 javascriptengine = "1.0.0-alpha05"
+lifecycle = "2.6.1"
+lifecycle-viewmodel-compose = "2.6.1"
 loader = "1.1.0"
 multidex = "2.0.1"
 metrics = "1.0.0-alpha04"
+navigation = "2.7.0-beta02"
 palette = "1.0.0"
 percentlayout = "1.0.0"
 preference = "1.2.0"
@@ -149,9 +152,28 @@ heifwriter = { module = "androidx.heifwriter:heifwriter", version.ref = "heifwri
 input = { module = "androidx.input:input-motionprediction", version.ref = "input" }
 interpolator = { module = "androidx.interpolator:interpolator", version.ref = "interpolator" }
 javascriptengine = { module = "androidx.javascriptengine:javascriptengine", version.ref = "javascriptengine" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel-savedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycle" }
+lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycle" }
+lifecycle-reactivestreams-ktx = { module = "androidx.lifecycle:lifecycle-reactivestreams-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-testing = { module = "androidx.lifecycle:lifecycle-runtime-testing", version.ref = "lifecycle" }
 loader = { module = "androidx.loader:loader", version.ref = "loader" }
 multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
 metrics = { module = "androidx.metrics:metrics-performance", version.ref = "metrics" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigation" }
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigation" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigation" }
+navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "navigation" }
 palette = { module = "androidx.palette:palette", version.ref = "palette" }
 percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentlayout" }
 preference = { module = "androidx.preference:preference", version.ref = "preference" }
@@ -200,12 +222,8 @@ androidx = [
     "annotation",
     "appcompat",
     "appcompat-resources",
-    "appsearch",
-    "appsearch-local-storage",
-    "appsearch-platform-storage",
     "arch-core-common",
     "arch-core-runtime",
-    "arch-core-testing",
     "asynclayoutinflater",
     "autofill",
     "biometric",
@@ -219,16 +237,6 @@ androidx = [
     "constraintlayout",
     "contentpager",
     "coordinatorlayout",
-    "core",
-    "core-animation",
-    "core-google-shortcuts",
-    "core-ktx",
-    "core-performance",
-    "core-remoteviews",
-    "core-role",
-    "core-splashscreen",
-    "core-telecom",
-    "core-uwb",
     "credentials",
     "credentials-play-services-auth",
     "cursoradapter",
@@ -238,22 +246,9 @@ androidx = [
     "drawerlayout",
     "dynamicanimation",
     "dynamicanimation-ktx",
-    "dynamicanimation-ktx",
-    "emoji-appcompat",
-    "emoji-bundled",
-    "emoji2",
-    "emoji2-bundled",
-    "emoji2-picker",
-    "emoji2-views",
-    "emoji2-views-helper",
-    "enterprise",
-    "enterprise-testing",
     "exifinterface",
     "fragment",
     "fragment-ktx",
-    "graphics-core",
-    "graphics-path",
-    "graphics-shapes",
     "gridlayout",
     "health",
     "health-connect",
@@ -276,9 +271,6 @@ androidx = [
     "resourceinspection-processor",
     "savedstate",
     "savedstate-ktx",
-    "security-crypto",
-    "security-identity-credential",
-    "security-app-authenticator",
     "sharetarget",
     "slidingpanelayout",
     "startup",
@@ -286,18 +278,65 @@ androidx = [
     "textclassifier",
     "transition",
     "transition-ktx",
-    "vectordrawable",
-    "vectordrawable-animated",
-    "vectordrawable-seekable",
     "versionedparcelable",
     "viewpager2",
     "webkit",
-    "window",
-    "window-java",
-    "window-rxjava2",
-    "window-rxjava3",
-    "window-testing",
-    "window-extensions-core",
+]
+appsearch = [
+    "appsearch",
+    "appsearch-local-storage",
+    "appsearch-platform-storage",
+]
+core = [
+    "core",
+    "core-animation",
+    "core-google-shortcuts",
+    "core-ktx",
+    "core-performance",
+    "core-remoteviews",
+    "core-role",
+    "core-splashscreen",
+    "core-telecom",
+    "core-uwb",
+]
+emoji = [
+    "emoji-appcompat",
+    "emoji-bundled",
+    "emoji2",
+    "emoji2-bundled",
+    "emoji2-picker",
+    "emoji2-views",
+    "emoji2-views-helper",
+]
+enterprise = [
+    "enterprise",
+    "enterprise-testing",
+]
+graphics = [
+    "graphics-core",
+    "graphics-path",
+    "graphics-shapes",
+]
+lifecycle = [
+    "lifecycle-viewmodel-ktx",
+    "lifecycle-viewmodel-compose",
+    "lifecycle-livedata-ktx",
+    "lifecycle-runtime-ktx",
+    "lifecycle-runtime-compose",
+    "lifecycle-viewmodel-savedstate",
+]
+navigation = [
+    "navigation-compose",
+    "navigation-fragment",
+    "navigation-fragment-ktx",
+    "navigation-ui",
+    "navigation-ui-ktx",
+    "navigation-dynamic-features-fragment",
+]
+security = [
+    "security-crypto",
+    "security-identity-credential",
+    "security-app-authenticator",
 ]
 work = [
     "work",
@@ -306,14 +345,35 @@ work = [
     "work-gcm",
     "work-multiprocess",
 ]
+window = [
+    "window",
+    "window-java",
+    "window-rxjava2",
+    "window-rxjava3",
+    "window-testing",
+    "window-extensions-core",
+]
+vectordrawable = [
+    "vectordrawable",
+    "vectordrawable-animated",
+    "vectordrawable-seekable",
+]
 androidTesting = [
     "core-animation-testing",
 ]
 androidTestImplementation = [
+    "navigation-testing",
     "security-app-authenticator",
     "work-testing",
 ]
+testImplementation = [
+    "arch-core-testing",
+    "lifecycle-runtime-testing",
+]
 debugImplementation = [
     "fragment-testing",
+]
+kapt = [
+    "lifecycle-compiler",
 ]
 

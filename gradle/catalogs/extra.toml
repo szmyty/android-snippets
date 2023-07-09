@@ -2,11 +2,29 @@
 # https://docs.gradle.org/current/userguide/platforms.html
 # Third-party Libraries.
 [versions]
+accompanist = "0.31.5-beta"
+coil = "2.4.0"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
 retrofit = "2.9.0" # https://github.com/square/retrofit
 retrofit2-kotlinx-serialization-converter = "1.0.0"
 
 [libraries]
+accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
+accompanist-drawablepainter = { module = "com.google.accompanist:accompanist-drawablepainter", version.ref = "accompanist" }
+accompanist-navigation-material = { module = "com.google.accompanist:accompanist-navigation-material", version.ref = "accompanist" }
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+accompanist-placeholder-material = { module = "com.google.accompanist:accompanist-placeholder-material", version.ref = "accompanist" }
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+accompanist-testharness = { module = "com.google.accompanist:accompanist-testharness", version.ref = "accompanist" }
+accompanist-themeadapter-appcompat = { module = "com.google.accompanist:accompanist-themeadapter-appcompat", version.ref = "accompanist" }
+accompanist-themeadapter-core = { module = "com.google.accompanist:accompanist-themeadapter-core", version.ref = "accompanist" }
+accompanist-themeadapter-material3 = { module = "com.google.accompanist:accompanist-themeadapter-material3", version.ref = "accompanist" }
+accompanist-webview = { module = "com.google.accompanist:accompanist-webview", version.ref = "accompanist" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coil" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
+coil-video = { module = "io.coil-kt:coil-video", version.ref = "coil" }
 easydeviceinfo = { module = "com.github.nisrulz:easydeviceinfo", version.ref = "easydeviceinfo" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-adapter-guava = { module = "com.squareup.retrofit2:adapter-guava", version.ref = "retrofit" }
@@ -28,8 +46,25 @@ retrofit-mock = { module = "com.squareup.retrofit2:retrofit-mock", version.ref =
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2-kotlinx-serialization-converter" }
 
 [bundles]
-utils = [
-    "easydeviceinfo",
+accompanist = [
+    "accompanist-adaptive",
+    "accompanist-drawablepainter",
+    "accompanist-navigation-material",
+    "accompanist-permissions",
+    "accompanist-placeholder-material",
+    "accompanist-systemuicontroller",
+    "accompanist-testharness",
+    "accompanist-themeadapter-appcompat",
+    "accompanist-themeadapter-core",
+    "accompanist-themeadapter-material3",
+    "accompanist-webview",
+]
+coil = [
+    "coil",
+    "coil-compose",
+    "coil-gif",
+    "coil-svg",
+    "coil-video"
 ]
 retrofit = [
     "retrofit",
@@ -43,6 +78,7 @@ retrofit = [
     "retrofit-converter-jackson",
     "retrofit-converter-java8",
     "retrofit-converter-jaxb",
+    "retrofit-mock",
     "retrofit-converter-moshi",
     "retrofit-converter-protobuf",
     "retrofit-converter-scalars",
@@ -50,6 +86,6 @@ retrofit = [
     "retrofit-converter-wire",
     "retrofit2-kotlinx-serialization-converter",
 ]
-testing = [
-    "retrofit-mock"
+utils = [
+    "easydeviceinfo",
 ]
