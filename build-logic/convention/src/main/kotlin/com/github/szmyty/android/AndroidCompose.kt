@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 package com.github.szmyty.android
 
 import com.android.build.api.dsl.CommonExtension

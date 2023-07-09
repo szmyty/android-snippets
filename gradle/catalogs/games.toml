@@ -1,0 +1,28 @@
+#### Gradle Library Catalog ####
+# https://docs.gradle.org/current/userguide/platforms.html
+# https://developer.android.com/jetpack/androidx/releases/games
+[versions]
+games-activity = "2.0.2"
+games-controller = "2.0.0"
+games-frame-pacing = "2.1.0-beta01"
+games-memory-advice = "2.0.0-beta04"
+games-text-input = "2.0.0"
+games-performance-tuner = "2.0.0-alpha04"
+
+[libraries]
+games-activity = { module = "androidx.games:games-activity", version.ref = "games-activity" }
+games-controller = { module = "androidx.games:games-controller", version.ref = "games-controller" }
+games-frame-pacing = { module = "androidx.games:games-frame-pacing", version.ref = "games-frame-pacing" }
+games-memory-advice = { module = "androidx.games:games-memory-advice", version.ref = "games-memory-advice" }
+games-text-input = { module = "androidx.games:games-text-input", version.ref = "games-text-input" }
+games-performance-tuner = { module = "androidx.games:games-performance-tuner", version.ref = "games-performance-tuner" }
+
+[bundles]
+car = [
+    "games-activity",
+    "games-controller",
+    "games-frame-pacing",
+    "games-memory-advice",
+    "games-text-input",
+    "games-performance-tuner",
+]
