@@ -65,6 +65,8 @@ multidex = "2.0.1"
 metrics = "1.0.0-alpha04"
 navigation = "2.7.0-beta02"
 room = "2.6.0-alpha02"
+paging = "3.2.0-rc01"
+paging-compose = "1.0.0-alpha20"
 palette = "1.0.0"
 percentlayout = "1.0.0"
 preference = "1.2.0"
@@ -195,6 +197,12 @@ navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.
 navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigation" }
 navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "navigation" }
 palette = { module = "androidx.palette:palette", version.ref = "palette" }
+paging = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging-compose" }
+paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
+paging-rxjava2 = { module = "androidx.paging:paging-rxjava2", version.ref = "paging" }
+paging-rxjava3 = { module = "androidx.paging:paging-rxjava3", version.ref = "paging" }
+paging-guava = { module = "androidx.paging:paging-guava", version.ref = "paging" }
 percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentlayout" }
 preference = { module = "androidx.preference:preference", version.ref = "preference" }
 preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference" }
@@ -385,6 +393,13 @@ navigation = [
     "navigation-ui-ktx",
     "navigation-dynamic-features-fragment",
 ]
+paging = [
+    "paging",
+    "paging-compose",
+    "paging-rxjava2",
+    "paging-rxjava3",
+    "paging-guava",
+]
 room = [
     "room",
     "room-ktx",
@@ -438,6 +453,7 @@ testImplementation = [
     "arch-core-testing",
     "lifecycle-runtime-testing",
     "room-testing",
+    "paging-common",
 ]
 debugImplementation = [
     "fragment-testing",
