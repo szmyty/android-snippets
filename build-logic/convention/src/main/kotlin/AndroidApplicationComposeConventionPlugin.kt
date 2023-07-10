@@ -1,15 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
-import com.google.samples.apps.nowinandroid.configureAndroidCompose
+import com.github.szmyty.android.configureAndroidCompose
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 
-class AndroidApplicationComposeConventionPlugin : Plugin<Project> {
-    override fun apply(target: Project) {
-        with(target) {
-            pluginManager.apply("com.android.application")
-            val extension = extensions.getByType<ApplicationExtension>()
-            configureAndroidCompose(extension)
-        }
-    }
-}

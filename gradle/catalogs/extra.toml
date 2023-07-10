@@ -5,6 +5,13 @@
 accompanist = "0.31.5-beta"
 coil = "2.4.0"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
+moshi = "1.15.0"
+moshi-adapters = "1.15.0"
+moshi-kotlin = "1.15.0"
+moshi-kotlin-codegen = "1.15.0"
+moshi-geojson = "1.0"
+moshipack = "1.0.1"
+moshipack-retrofit = "1.0.1"
 retrofit = "2.9.0" # https://github.com/square/retrofit
 retrofit2-kotlinx-serialization-converter = "1.0.0"
 sqlcipher = "4.5.4"
@@ -27,6 +34,13 @@ coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coil" }
 coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
 coil-video = { module = "io.coil-kt:coil-video", version.ref = "coil" }
 easydeviceinfo = { module = "com.github.nisrulz:easydeviceinfo", version.ref = "easydeviceinfo" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-adapters = { module = "com.squareup.moshi:moshi-adapters", version.ref = "moshi-adapters" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi-kotlin" }
+moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi-kotlin-codegen" }
+moshi-geojson = { module = "dev.haeusler.geojson-kotlin:geojson-moshi", version.ref = "moshi-geojson" }
+moshipack = { module = "com.daveanthonythomas.moshipack:moshipack", version.ref = "moshipack" }
+moshipack-retrofit = { module = "com.daveanthonythomas.moshipack:moshipack-retrofit", version.ref = "moshipack-retrofit" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-adapter-guava = { module = "com.squareup.retrofit2:adapter-guava", version.ref = "retrofit" }
 retrofit-adapter-java8 = { module = "com.squareup.retrofit2:adapter-java8", version.ref = "retrofit" }
@@ -70,6 +84,17 @@ coil = [
 ]
 database = [
     "sqlcipher",
+]
+moshi = [
+    "moshi",
+    "moshi-adapters",
+    "moshi-kotlin",
+    "moshi-kotlin-codegen",
+    "moshi-geojson",
+]
+moshipack = [
+    "moshipack",
+    "moshipack-retrofit",
 ]
 retrofit = [
     "retrofit",

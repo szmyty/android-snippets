@@ -30,55 +30,55 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplicationCompose") {
-            id = "nowinandroid.android.application.compose"
-            implementationClass = "AndroidApplicationComposeConventionPlugin"
+            id = "szmyty.android.application.compose"
+            implementationClass = "AndroidComposePlugin"
         }
         register("androidApplication") {
-            id = "nowinandroid.android.application"
+            id = "szmyty.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidApplicationJacoco") {
-            id = "nowinandroid.android.application.jacoco"
+            id = "szmyty.android.application.jacoco"
             implementationClass = "AndroidApplicationJacocoConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "nowinandroid.android.library.compose"
+            id = "szmyty.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "nowinandroid.android.library"
+            id = "szmyty.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidFeature") {
-            id = "nowinandroid.android.feature"
+            id = "szmyty.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
         register("androidLibraryJacoco") {
-            id = "nowinandroid.android.library.jacoco"
+            id = "szmyty.android.library.jacoco"
             implementationClass = "AndroidLibraryJacocoConventionPlugin"
         }
         register("androidTest") {
-            id = "nowinandroid.android.test"
+            id = "szmyty.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
         register("androidHilt") {
-            id = "nowinandroid.android.hilt"
+            id = "szmyty.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
         register("androidRoom") {
-            id = "nowinandroid.android.room"
+            id = "szmyty.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
         register("androidFirebase") {
-            id = "nowinandroid.android.application.firebase"
+            id = "szmyty.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
         register("androidFlavors") {
-            id = "nowinandroid.android.application.flavors"
+            id = "szmyty.android.application.flavors"
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
         }
         register("jvmLibrary") {
-            id = "nowinandroid.jvm.library"
+            id = "szmyty.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
     }
