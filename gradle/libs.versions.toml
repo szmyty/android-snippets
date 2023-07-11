@@ -1,6 +1,12 @@
 #### Gradle Library Catalog ####
 # https://docs.gradle.org/current/userguide/platforms.html
 [versions]
+# @keep
+compile-sdk = "34"
+# @keep
+min-sdk = "24"
+# @keep
+target-sdk = "34"
 # @pin
 android-desugar-libs = "2.0.3"
 android-gradle-plugin = "8.0.2"
@@ -19,6 +25,8 @@ protobuf-plugin = "0.9.3"
 secrets-plugin = "2.0.1"
 
 [libraries]
+android-desugar-libs = { module = "com.android.tools.desugar_jdk_libs", version.ref = "android-desugar-libs" }
+
 #### Gradle Plugins. ####
 google-oss-licenses-plugin = { group = "com.google.android.gms", name = "oss-licenses-plugin", version.ref = "google-oss-plugin" }
 

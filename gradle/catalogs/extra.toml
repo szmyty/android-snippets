@@ -5,16 +5,29 @@
 accompanist = "0.31.5-beta"
 coil = "2.4.0"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
-moshi = "1.15.0"
+flow-bus = "1.1"
+kotlin-pluralizer = "1.0.0"
+guava = "31.1-jre"
+landscapist = "2.2.2"
+logger = "2.2.0"
+jackson = "2.15.2"
+jackson-module-kotlin = "2.15.2"
+moshi = "1.15.0" # https://github.com/square/moshi
 moshi-adapters = "1.15.0"
 moshi-kotlin = "1.15.0"
 moshi-kotlin-codegen = "1.15.0"
 moshi-geojson = "1.0"
-moshipack = "1.0.1"
-moshipack-retrofit = "1.0.1"
+moshipack = "1.0.1" # https://github.com/davethomas11/MoshiPack
+moshipack-retrofit = "1.0.1" # https://github.com/davethomas11/MoshiPack/tree/master/moshipack-retrofit
+ok2curl = "0.8.0" # https://github.com/mrmike/Ok2Curl
 retrofit = "2.9.0" # https://github.com/square/retrofit
+retrofit-adapters = "1.0.6" # https://github.com/skydoves/retrofit-adapters
 retrofit2-kotlinx-serialization-converter = "1.0.0"
+sandwich = "1.3.7"
 sqlcipher = "4.5.4"
+selekt = "0.19.0"
+spatialk = "0.2.0"
+tink = "1.7.0"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -34,6 +47,19 @@ coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coil" }
 coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
 coil-video = { module = "io.coil-kt:coil-video", version.ref = "coil" }
 easydeviceinfo = { module = "com.github.nisrulz:easydeviceinfo", version.ref = "easydeviceinfo" }
+flow-bus = { module = "com.github.Kosert.FlowBus:FlowBus", version.ref = "flow-bus" }
+flow-bus-android = { module = "com.github.Kosert.FlowBus:FlowBus-android", version.ref = "flow-bus" }
+landscapist = { module = "com.github.skydoves:landscapist", version.ref = "landscapist" }
+landscapist-coil = { module = "com.github.skydoves:landscapist-coil", version.ref = "landscapist" }
+landscapist-animation = { module = "com.github.skydoves:landscapist-animation", version.ref = "landscapist" }
+landscapist-placeholder = { module = "com.github.skydoves:landscapist-placeholder", version.ref = "landscapist" }
+landscapist-transformation = { module = "com.github.skydoves:landscapist-transformation", version.ref = "landscapist" }
+landscapist-palette = { module = "com.github.skydoves:landscapist-palette", version.ref = "landscapist" }
+logger = { module = "com.orhanobut:logger", version.ref = "logger" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+kotlin-pluralizer = { module = "com.github.cesarferreira:kotlin-pluralizer", version.ref = "kotlin-pluralizer" }
+jackson = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson-module-kotlin" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 moshi-adapters = { module = "com.squareup.moshi:moshi-adapters", version.ref = "moshi-adapters" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi-kotlin" }
@@ -41,7 +67,12 @@ moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", ver
 moshi-geojson = { module = "dev.haeusler.geojson-kotlin:geojson-moshi", version.ref = "moshi-geojson" }
 moshipack = { module = "com.daveanthonythomas.moshipack:moshipack", version.ref = "moshipack" }
 moshipack-retrofit = { module = "com.daveanthonythomas.moshipack:moshipack-retrofit", version.ref = "moshipack-retrofit" }
+ok2curl = { module = "com.github.mrmike:ok2curl", version.ref = "ok2curl" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-adapter-arrow = { module = "com.github.skydoves:retrofit-adapters-arrow", version.ref = "retrofit-adapters" }
+retrofit-adapter-result = { module = "com.github.skydoves:retrofit-adapters-result", version.ref = "retrofit-adapters" }
+retrofit-adapter-paging = { module = "com.github.skydoves:retrofit-adapters-paging", version.ref = "retrofit-adapters" }
+retrofit-adapter-serialization = { module = "com.github.skydoves:retrofit-adapters-serialization", version.ref = "retrofit-adapters" }
 retrofit-adapter-guava = { module = "com.squareup.retrofit2:adapter-guava", version.ref = "retrofit" }
 retrofit-adapter-java8 = { module = "com.squareup.retrofit2:adapter-java8", version.ref = "retrofit" }
 retrofit-adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit" }
@@ -59,7 +90,12 @@ retrofit-converter-simplexml = { module = "com.squareup.retrofit2:converter-simp
 retrofit-converter-wire = { module = "com.squareup.retrofit2:converter-wire", version.ref = "retrofit" }
 retrofit-mock = { module = "com.squareup.retrofit2:retrofit-mock", version.ref = "retrofit" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2-kotlinx-serialization-converter" }
+sandwich = { module = "com.github.skydoves:sandwich", version.ref = "sandwich" }
 sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "sqlcipher" }
+selekt = { module = "com.bloomberg:selekt-android", version.ref = "selekt" }
+spatialk-geojson = { module = "io.github.dellisd.spatialk:geojson", version.ref = "spatialk" }
+spatialk-turf = { module = "io.github.dellisd.spatialk:turf", version.ref = "spatialk" }
+tink = { module = "com.google.crypto.tink.tink-android", version.ref = "tink" }
 
 [bundles]
 accompanist = [
@@ -84,6 +120,22 @@ coil = [
 ]
 database = [
     "sqlcipher",
+    "selekt",
+]
+geographic = [
+    "spatialk-geojson",
+    "spatialk-turf",
+]
+landscapist = [
+    "landscapist",
+    "landscapist-coil",
+    "landscapist-animation",
+    "landscapist-placeholder",
+    "landscapist-transformation",
+    "landscapist-palette",
+]
+logging = [
+    "logger",
 ]
 moshi = [
     "moshi",
@@ -98,6 +150,10 @@ moshipack = [
 ]
 retrofit = [
     "retrofit",
+    "retrofit-adapter-arrow",
+    "retrofit-adapter-result",
+    "retrofit-adapter-paging",
+    "retrofit-adapter-serialization",
     "retrofit-adapter-guava",
     "retrofit-adapter-java8",
     "retrofit-adapter-rxjava2",
@@ -121,4 +177,14 @@ security = [
 ]
 utils = [
     "easydeviceinfo",
+    "flow-bus",
+    "flow-bus-android",
+    "kotlin-pluralizer",
+    "guava",
+    "jackson",
+    "jackson-module-kotlin",
+    "sandwich",
+]
+diagnostics = [
+    "ok2curl",
 ]
