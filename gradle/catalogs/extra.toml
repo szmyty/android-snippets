@@ -6,6 +6,7 @@ accompanist = "0.31.5-beta"
 coil = "2.4.0"
 composesensors = "1.1.0"
 compose-colorpicker = "1.0.3"
+compose-konfetti = "2.0.2"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
 flow-bus = "1.1"
 kotlin-pluralizer = "1.0.0"
@@ -37,6 +38,8 @@ kotlin-faker = "1.14.0"
 bundler = "1.0.4"
 treessence = "1.1.1"
 timber = "5.0.1"
+cloudy = "0.1.2"
+okio = "3.4.0"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -114,6 +117,9 @@ bundler = { module = "com.github.skydoves:bundler", version.ref = "bundler" }
 treessence = { module = "com.github.bastienpaulfr:Treessence", version.ref = "treessence" }
 composesensors = { module = "com.mutualmobile:composesensors", version.ref = "composesensors" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+compose-konfetti = { module = "nl.dionsegijn:konfetti-compose", version.ref = "compose-konfetti" }
+cloudy = { module = "com.github.skydoves:cloudy", version.ref = "cloudy" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
 
 [bundles]
 accompanist = [
@@ -138,7 +144,9 @@ coil = [
 ]
 compose = [
     "composesensors",
+    "compose-konfetti",
     "compose-colorpicker",
+    "cloudy"
 ]
 database = [
     "sqlcipher",
@@ -213,6 +221,7 @@ utils = [
     "kotlin-faker",
     "bundler",
     "treessence",
+    "okio",
 ]
 diagnostics = [
     "ok2curl",
