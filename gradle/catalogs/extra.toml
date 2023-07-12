@@ -4,6 +4,7 @@
 [versions]
 accompanist = "0.31.5-beta"
 coil = "2.4.0"
+composesensors = "1.1.0"
 compose-colorpicker = "1.0.3"
 easydeviceinfo = "2.4.1" # https://github.com/nisrulz/easydeviceinfo
 flow-bus = "1.1"
@@ -31,6 +32,11 @@ spatialk = "0.2.0"
 tink = "1.7.0"
 whatif = "1.1.2"
 only = "1.0.8"
+qrcode-kotlin = "3.3.0"
+kotlin-faker = "1.14.0"
+bundler = "1.0.4"
+treessence = "1.1.1"
+timber = "5.0.1"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -99,9 +105,15 @@ sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "
 selekt = { module = "com.bloomberg:selekt-android", version.ref = "selekt" }
 spatialk-geojson = { module = "io.github.dellisd.spatialk:geojson", version.ref = "spatialk" }
 spatialk-turf = { module = "io.github.dellisd.spatialk:turf", version.ref = "spatialk" }
-tink = { module = "com.google.crypto.tink.tink-android", version.ref = "tink" }
+tink = { module = "com.google.crypto.tink:tink-android", version.ref = "tink" }
 whatif = { module = "com.github.skydoves:whatif", version.ref = "whatif" }
 only = { module = "com.github.skydoves:only", version.ref = "only" }
+qrcode-kotlin = { module = "io.github.g0dkar:qrcode-kotlin-android", version.ref = "qrcode-kotlin" }
+kotlin-faker = { module = "io.github.serpro69:kotlin-faker", version.ref = "kotlin-faker" }
+bundler = { module = "com.github.skydoves:bundler", version.ref = "bundler" }
+treessence = { module = "com.github.bastienpaulfr:Treessence", version.ref = "treessence" }
+composesensors = { module = "com.mutualmobile:composesensors", version.ref = "composesensors" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [bundles]
 accompanist = [
@@ -125,6 +137,7 @@ coil = [
     "coil-video"
 ]
 compose = [
+    "composesensors",
     "compose-colorpicker",
 ]
 database = [
@@ -145,6 +158,7 @@ landscapist = [
 ]
 logging = [
     "logger",
+    "timber",
 ]
 moshi = [
     "moshi",
@@ -195,6 +209,10 @@ utils = [
     "sandwich",
     "whatif",
     "only",
+    "qrcode-kotlin",
+    "kotlin-faker",
+    "bundler",
+    "treessence",
 ]
 diagnostics = [
     "ok2curl",
